@@ -1,0 +1,20 @@
+
+
+.appHeader {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.appLogo {
+    padding: 10px 8px;
+}
+.appLogoLink {
+    text-decoration: none;
+    color: var(--fm-principal);
+    font-size: 20px;
+}
+.appLogoLink span {
+    color: #1C4B77;
+}
