@@ -19,11 +19,10 @@ code {
 
 :root {
 
-  --fm-principal: #3996EE;
-  --fm-secondary: #9CCBF6;
-  --fm-tertiary: #EE393B;
-  --fm-principal-2: #1C4B77;
+  --fm-principal: #1C4B77;
+  --fm-principal-2: #3996EE;
   --fm-principal-3: #B5D8F9;
+  --fm-tertiary: #EE393B;
   --fm-light-1: #F9F9FA;
   --fm-dark-1: #1E2123;
 

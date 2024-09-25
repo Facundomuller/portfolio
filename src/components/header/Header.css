@@ -4,17 +4,29 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin: 20px 0;
 }
 
 .appLogo {
-    padding: 10px 8px;
+    padding: 0;
+    margin: auto;
 }
 .appLogoLink {
     text-decoration: none;
     color: var(--fm-principal);
-    font-size: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 .appLogoLink span {
-    color: #1C4B77;
+    color: var(--fm-principal-2);
+}
+
+@media(max-width: 1280px) {
+    .appLogo {
+        margin: 0 1rem;
+    }
+    .appLogoLink {
+        font-size: 1.5rem;
+    }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Menu from "./Menu";
 import "./ButtonMenu.css";
 
 function ButtonMenu() {
@@ -25,7 +25,7 @@ function ButtonMenu() {
                 <span></span>
             </div>
             <div className={`menu ${open}`}>
-                
+                <Menu />
             </div>
         </>
     )

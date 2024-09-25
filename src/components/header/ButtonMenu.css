@@ -8,9 +8,10 @@
     top: -40px;
     cursor: pointer;
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+    transition: .2s;
     z-index: 5;
 }
-.buttonMenu {
+.buttonMenu:hover {
     filter: none;
 }
 .buttonMenu span {
@@ -26,26 +27,59 @@
 .buttonMenu span:nth-child(2) {
     bottom: 38px;
 }
-.buttonMenu span:nth-child(3) {
+.buttonMenu span:last-child {
     bottom: 46px;
+}
+.buttonMenu.open span:first-child {
+    transform: rotate(-45deg);
+    bottom: 38px;
+}
+.buttonMenu.open span:nth-child(2) {
+    display: none;
+}
+.buttonMenu.open span:last-child {
+    transform: rotate(45deg);
+    bottom: 38px;
 }
 
 .menu {
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--fm-principal);
-    border-radius: 100%;
-    right: -40px;
-    top: -40px;
+    border-radius: 0;
+    right: 0;
+    top: -100%;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     z-index: 3;
+    cursor: default;
 }
 .menu.open {
-    width: 250vw;
-    height: 150vh;
-    right: -50vw;
-    top: -50vh;
-    border-radius: 0;
+    top: 0;
+}
+
+.menuList {
+    text-align: center;
+    display: grid;
+}
+.menuList a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem;
+    transition: .2s;
+}
+.menuList a:hover {
+    text-shadow: 0px 0px 4px;
+}
+
+/* Mobile */
+@media (max-width:1280px) {
+    .menuList a {
+        font-size: 2rem;
+    }
 }
